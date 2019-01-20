@@ -1,0 +1,52 @@
+<!Doctype html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+
+<h1>This is a form....</h1>
+
+<!-- <form action="#" method="POST">
+    <label>Username:</label> <input type="text" name="username" value="" /> <br/><br/>
+    <label>Password:</label> <input type="password" name="password" value="" /> <br/><br/>
+    <input type="submit" value="Log In" />
+</form> -->
+
+<form action="#" method="GET">
+   <label>Name:</label> <input type="text" name="name" value="Maria" readonly maxlength="10" minlength="5" required/><br/><br/>
+   <label>Age:</label> <input type="number" name="age" /><br/><br/>
+   <label>Knowledge:</label> <input type="range" name="knw" min="0" max="100" required/><br/><br/>
+   <label>University:</label> <input type="checkbox" name="uni" value="tu" checked/> TU
+                            <input type="checkbox" name="uni" value="ku" checked/> KU
+                            <input type="checkbox" name="uni" value="pu"/> PU
+                            <br/><br/>
+    <label>Gender:</label> <input type="radio" name="gender" value="male">M
+    <input type="radio" name="gender" value="female" checked>F<br/><br/>
+
+    <label>Country</label>
+    <select name="country" disabled>
+        <option value="nepal" selected>Nepal</option>
+        <option value="india" >India</option>
+        <option value="usa" >USA</option>
+    </select>
+    <br/></br/>
+
+    <label>City</label>
+    <input list="city" name="city">
+    <datalist id="city">
+        <option value="Kathmandu">
+        <option value="Pokhara">
+        <option value="Biratnagar">
+    </datalist>
+    <br/><br/>
+
+    <label>Description</label>
+    <textarea name="desc" rows="10" cols="10" required placeholder="Please write about you...."></textarea>
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Erase" />
+</form>
+
+
+</body>
+
+</html>
